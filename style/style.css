@@ -909,4 +909,77 @@ footer{
     .maw h6{
         font-size: 1rem;
     }
+
+    .big-karobar-area .share-badyo{
+        width: 90vw;
+    }
+    .share-badyo h5{
+        font-size: 1.6rem;
+        text-align: justify;
+        transition: all ease-in-out 300ms;
+        cursor: pointer;
+    }
+
+    .gautam-buddha{
+        width: 90vw;
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.6rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .aeroplane{
+        width: 100%;
+       height: 600px;
+    }
+    .aeroplane img{
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    
+    .karobar-ad{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .social-media{
+        max-width: 100%;
+       
+        padding: 1rem;
+    }
+
+    .media{
+        display: flex;
+        justify-content: center;
+    }
+
+    .make-wider{
+        max-width: 90vw;
+        gap: 2rem;
+        
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .for-advertisement{
+        border-right:none;
+        border-left: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .my-team{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
 }
