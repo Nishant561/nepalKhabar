@@ -67,7 +67,7 @@ nav {
 
 .link-container{
     width: 100vw;
-    height: 50px;
+    
     padding: 30px 0;
     border-bottom: 1px solid rgb(124, 123, 123);
 }
@@ -657,3 +657,119 @@ footer{
     font-weight: 500;
 }
 
+/* responsivesness */
+.ham-burger{
+    display: none;
+}
+.closeNav{
+    display: none;
+    padding: 6px 8px;
+    font-size:1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+/* mobile 360 * 640 to 414*816 */
+/* tablet 601×962 to 1280×800 */
+/* desktop 1280×720 to 1920×1080 */
+@media only screen and (max-width:1286px) {
+    
+    .links{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        align-items: center;
+    }
+
+    .wider{
+        border: 1px solid black;
+    }
+    .links .unicode{
+        order: -1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .res{
+        width: 100vw;
+        
+    }
+    .page-links{
+        
+        gap:1rem;
+        font-size: 20px;
+        flex-wrap: wrap;
+    }
+    
+}
+
+
+@media only screen and (max-width:600px) {
+    .ham-burger{
+        display: block;
+        font-size: 1.5rem;
+        color: gray;
+        cursor: pointer;
+    }
+
+    
+
+    .links .unicode{
+        order: 0;
+        gap: .5rem;
+    }
+
+    .links .unicode li a{
+        font-size: .9rem;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin: 0 10px;
+    }
+
+
+    .img-container{
+        width: 200px;
+    }
+
+    .img-container img{
+        width: 100%;
+    }
+
+    .img-container .date{
+        font-size:3vw;
+        padding-top:10px
+    }
+
+    .links .slider{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 13px 0 13px;
+        transition: all linear 600ms;
+        background-color: white;
+        z-index: 15;
+        
+    }
+
+    .closeNav{
+        display: block;
+        position: absolute;
+        right: 15px;
+    }
+}

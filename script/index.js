@@ -38,14 +38,20 @@ const hastagContainer = document.querySelector(".hashtag-container");
 
 function addLinks() {
   const links_ul = document.createElement("ul");
+  const closeButton = document.createElement("button")
   const unicode_ul = document.createElement("ul")
     const hastag_ul = document.createElement("ul")
-  links_ul.classList.add("page-links");
+  links_ul.classList.add('page-links','slider');
   const lists = links
     .map((items) => `<li><a href="#">${items}</a></li>`)
     .join("");
 
     links_ul.innerHTML = lists;
+
+    closeButton.classList.add('closeNav')
+    closeButton.innerText = "Close"
+
+    links_ul.appendChild(closeButton)
 
     unicode_ul.classList.add('unicode','page-links')
     
@@ -72,3 +78,18 @@ function addLinks() {
 
 }
 addLinks();
+
+
+// making the sliding nav bar
+const hamButton = document.querySelector('.ham-burger')
+const sliderNav =document.querySelector('.slider')
+hamButton.addEventListener('click',()=>{
+    sliderNav.style.left = "0%"
+})
+
+const closeButton = document.querySelector('.closeNav')
+
+closeButton.addEventListener('click',()=>{
+  sliderNav.style.left = "-100%"
+  console.log("hello")
+})
